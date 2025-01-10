@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img class="logo" src="stuff/lib.png" alt="books">
+            <h1 style="padding-left: 48px;">BookVault</h1>
+            <span><button class="create">+ Add Book</button></span>
+        </div>
+        <dialog class="pop">
+            <form class="form" id="myForm">
+                <div class="title">
+                    <div style="padding-top:16px; padding-left: 22px;" class="each">
+                        <label for="title">Title :</label>
+                        <input class="box" type="text" id="title" name="title" required>
+                    </div>
+                </div>
+
+                <div class="author">
+                    <div class="each">
+                    <label for="author">Author :</label>
+                    <input class="box" type="text" id="author" name="author" required>
+                </div>
+                </div>
+                        
+                 <div class="pages">
+                    <div style="padding-left: 10px;" class="each">
+                        <label for="pages">Pages :</label>
+                        <input class="box" type="number" id="pages" name="pages" required>
+                    </div>
+                 </div>   
+                
+
+                <div style="padding-left: 28px;padding-bottom: 36px; display: flex; align-items: center;" class="each">
+                    <input type="checkbox" id="read" name="read">
+                    <label for="read">I have read this book.</label>
+                </div>
+            </form>
+                <div class="each_diff">
+                    <button class="cancel" type="button">Cancel</button>
+                    <button class="add" type="submit" form="myForm">Add</button>
+                </div>
+                    
+        </dialog>
+        <div class="content">
+            <div class="first">
+                <p>It's empty!</p>
+                <img class="face" src="stuff/face.png" alt="face">
+            </div>  
+        </div>
+    </div>
+</body>
+</html>
